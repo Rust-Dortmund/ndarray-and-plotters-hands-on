@@ -2,3 +2,4 @@ book
 
 # Ignore temporary files created by emacs
 *.#
+*~
