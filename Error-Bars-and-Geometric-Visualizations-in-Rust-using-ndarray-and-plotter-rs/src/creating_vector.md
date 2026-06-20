@@ -10,10 +10,11 @@ let stepwidth: f32 = 1.0;
 let number: usize = 11;
 ```
 
-## Creating a vector with a specefic numer of elements
+## Creating a vector with a specific number of elements
 
 ```
 let array_1: Array1<f32> = Array1::linspace(min, max, number);
+
 println!("{:?}", array_1);
 ```
 
