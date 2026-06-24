@@ -3,7 +3,7 @@
 ## Installation of mdBook
 
 ```
-cargo install mdBook
+cargo install mdbook
 ```
 
 ## Cloning the repository
