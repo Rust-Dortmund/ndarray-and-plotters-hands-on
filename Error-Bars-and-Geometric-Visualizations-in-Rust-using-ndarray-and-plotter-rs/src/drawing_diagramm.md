@@ -7,19 +7,19 @@ Useful link: [Plotters Tutorial with Jupyter](https://plotters-rs.github.io/plot
     - opens a jupyter notebook in the browser
 	- click the button *new* on the upper right
 	- choose **rust**
-- Include [num_traits](https://shadow.github.io/docs/rust/num_traits/pow/index.html).
+- Include [num_traits](https://shadow.github.io/docs/rust/num_traits/pow/index.html) and [plotters-rs](https://github.com/plotters-rs/plotters)
 
 ```
 :dep num-traits = "0.2.19"
 use num_traits::pow;
+
+:dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
+use plotters::prelude::*;
 ```
 
 - Copy and paste teh following code snippet in a cell
 
 ```
-:dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
-use plotters::prelude::*;
-
 evcxr_figure((640, 480), |root| {
     let root = root.titled("2D Plotting", ("Arial", 20).into_font())?;
     
