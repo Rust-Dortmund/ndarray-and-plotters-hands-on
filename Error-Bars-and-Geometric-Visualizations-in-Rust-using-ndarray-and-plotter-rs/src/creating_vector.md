@@ -2,17 +2,13 @@
 
 ## Include dependencies
 
-Include [ndarray](https://docs.rs/ndarray/latest/ndarray/).
+Include [ndarray](https://docs.rs/ndarray/latest/ndarray/) and [num_traits](https://shadow.github.io/docs/rust/num_traits/pow/index.html)
 
 ```
 :dep ndarray = "0.17.2"
-use ndarray::Array1;
-```
-
-Include [num_traits](https://shadow.github.io/docs/rust/num_traits/pow/index.html).
-
-```
 :dep num-traits = "0.2.19"
+
+use ndarray::Array1;
 use num_traits::pow;
 ```
 
@@ -30,7 +26,7 @@ let number: usize = 51;
 ```
 let size_cm: Array1<f32> = Array1::linspace(min, max, number);
 
-println!("{:?}", array_1);
+println!("{:?}", size_cm);
 ```
 
 
@@ -42,13 +38,13 @@ let size_cm_2: Array1<f32> = (0..)
 	.take_while(|&x| x <= max)
 	.collect();
 	
-println!("{:?}", array_2);
+println!("{:?}", size_cm_2);
 ```
 
 Are both vectors equal?
 
 ```
-println!("Both vectors are equal: {}", size_cm_1 == size_cm_2);
+println!("Both vectors are equal: {}", size_cm == size_cm_2);
 ```
 
 
