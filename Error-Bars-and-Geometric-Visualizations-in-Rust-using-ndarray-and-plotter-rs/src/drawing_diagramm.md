@@ -11,9 +11,9 @@ Useful link: [Plotters Tutorial with Jupyter](https://plotters-rs.github.io/plot
 
 ```
 :dep num-traits = "0.2.19"
-use num_traits::pow;
-
 :dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
+
+use num_traits::pow;
 use plotters::prelude::*;
 ```
 
