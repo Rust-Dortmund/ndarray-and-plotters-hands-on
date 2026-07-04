@@ -1,7 +1,9 @@
 # Drawing a Diagram
 
-Useful link: [Plotters Tutorial with Jupyter](https://plotters-rs.github.io/plotters-doc-data/evcxr-jupyter-integration.html)
+Useful links:
 
+- [Plotters Tutorial with Jupyter](https://plotters-rs.github.io/plotters-doc-data/evcxr-jupyter-integration.html)
+- [How to run Rust on Jupyter Notebooks](https://www.freecodecamp.org/news/how-to-run-rust-on-jupyter-notebooks/)
 
 - Open a terminal, write `jupyter notebook`
     - opens a jupyter notebook in the browser
