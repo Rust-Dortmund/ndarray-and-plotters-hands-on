@@ -15,6 +15,7 @@ Jupyter interface and with the fourth the documentation is build.
 
 Useful links:
 
+- [plotters-rs: Plotters Developer's guide](https://plotters-rs.github.io/book/intro/introduction.html)
 - [plotters-rs: Plotters Tutorial with Jupyter](https://plotters-rs.github.io/plotters-doc-data/evcxr-jupyter-integration.html)
 - [freeCodeCamp: How to run Rust on Jupyter Notebooks](https://www.freecodecamp.org/news/how-to-run-rust-on-jupyter-notebooks/)
 - [Rust FAQ: How to Use ndarray for Numerical Computing in Rust](https://www.rustfaq.org/en/how-to-use-ndarray-for-numerical-computing-in-rust/)
