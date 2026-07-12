@@ -51,8 +51,8 @@ evcxr_figure((640, 480), |root| {
         sum_xy = sum_xy + i.0 * i.1;
     }
 
-    let a: f32 = (n * sum_xy - sum_x * sum_y) / (n * sum_xx - pow(sum_x, 2 as usize));
-    let b: f32 = (sum_y - a * sum_x) / n;
+    let b: f32 = (sum_xy - sum_x * sum_y / n) / (sum_xx - pow(sum_x, 2 as usize) / n);
+    let a: f32 = (sum_y - a * sum_x) / n;
 
     chart.draw_series(PointSeries::of_element(
         points,
