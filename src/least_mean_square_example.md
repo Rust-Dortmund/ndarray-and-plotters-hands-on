@@ -1,6 +1,6 @@
 # Least mean square example
 
-- Include depencies
+- Include dependencies
 
 ```
 :dep num-traits = "0.2.19"
