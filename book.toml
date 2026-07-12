@@ -1,5 +1,5 @@
 [book]
-title = "Error Bars and Geometric Visualizations in Rust using ndarray and plotter-rs"
+title = "Ndarray and Plotters Hands on"
 authors = ["Guenther Beulen"]
 language = "en"
 
