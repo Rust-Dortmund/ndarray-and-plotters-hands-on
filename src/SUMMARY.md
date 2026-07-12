@@ -5,5 +5,6 @@
 - [Preperations](./preperations.md)
 - [Creating a vector](./creating_vector.md)
 - [Drawing a diagramm](./drawing_diagramm.md)
-- [Least mean square example](./least_mean_square.md)
+- [Least mean square basics](./least_mean_square_basics.md)
+- [Least mean square example](./least_mean_square_example.md)
 - [Useful links](./useful_links.md)
