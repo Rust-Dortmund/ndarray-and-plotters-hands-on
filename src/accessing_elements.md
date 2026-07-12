@@ -20,7 +20,7 @@ A few decates ago the following eqution was used to calculate the normal body we
 Normal weight = body weight in cm - 100:
 
 ```
-let normal_weight_old = size_cm.mapv(|v| v - 100.0);
+let normal_weight_old: Array1<f32> = size_cm.mapv(|v| v - 100.0);
 
 println!("{}", normal_weight_old);
 ```
@@ -30,7 +30,7 @@ In these days the BMI (= Body Mass Index) is used. The weight in kg is devided b
 The formula \\(BMI = \frac{weight}{size^2 }\\) should be equal to 25:
 
 ```
-let normal_weight_new = size_cm.mapv(|v| pow(v/100.0, 2) * 25.0);
+let normal_weight_new: Array1<f32> = size_cm.mapv(|v| pow(v/100.0, 2) * 25.0);
 
 println!("{}", normal_weight_new);
 ```
