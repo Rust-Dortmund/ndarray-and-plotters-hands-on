@@ -2,7 +2,7 @@
 
 ## Include dependencies
 
-Include [ndarray](https://docs.rs/ndarray/latest/ndarray/) and [num_traits](https://shadow.github.io/docs/rust/num_traits/pow/index.html)
+Include [ndarray](https://docs.rs/ndarray/latest/ndarray/)
 
 ```
 :dep ndarray = "0.17.2"
@@ -12,6 +12,7 @@ use ndarray::Array1;
 use num_traits::pow;
 ```
 
+
 ## Define the the vector:
 
 ```
@@ -20,6 +21,7 @@ let max: f32 = 200.0;
 let stepwidth: f32 = 1.0;
 let number: usize = 51;
 ```
+
 
 ## Creating a vector with a specific number of elements
 
@@ -45,27 +47,4 @@ Are both vectors equal?
 
 ```
 println!("Both vectors are equal: {}", size_cm == size_cm_2);
-```
-
-
-## Calculations
-
-A few decates ago the following eqution was used to calculate the normal body weight:
-
-Normal weight = body weight in cm - 100:
-
-```
-let normal_weight_old = size_cm.mapv(|v| v - 100.0);
-
-println!("{}", normal_weight_old);
-```
-
-In these days the BMI (= Body Mass Index) is used. The weight in kg is devided by the square of the size in m. A BMI value of 25 represents the upper limit of the normal weight.
-
-The formula \\(BMI = \frac{weight}{size^2 }\\) should be equal to 25:
-
-```
-let normal_weight_new = size_cm.mapv(|v| pow(v/100.0, 2) * 25.0);
-
-println!("{}", normal_weight_new);
 ```
