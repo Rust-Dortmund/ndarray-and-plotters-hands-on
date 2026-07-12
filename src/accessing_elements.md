@@ -9,7 +9,6 @@ Include [num_traits](https://shadow.github.io/docs/rust/num_traits/pow/index.htm
 
 ```
 :dep num-traits = "0.2.19"
-
 use num_traits::pow;
 ```
 

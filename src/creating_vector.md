@@ -6,10 +6,7 @@ Include [ndarray](https://docs.rs/ndarray/latest/ndarray/)
 
 ```
 :dep ndarray = "0.17.2"
-:dep num-traits = "0.2.19"
-
 use ndarray::Array1;
-use num_traits::pow;
 ```
 
 
