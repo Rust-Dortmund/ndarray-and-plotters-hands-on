@@ -3,11 +3,15 @@
 This repository is for a workshop of
 the [MeetNTalk MVP - Rust Dortmund](https://meetntalk.rust-dortmund.de/events).
 
-The used crates are:
+## Motivation
+
+Let us calculate values and draw diagrams in a similar way as in Python.
+
+## Used crates
 
 - [ndarray](https://docs.rs/ndarray/latest/ndarray/)
 - [plotters-rs](https://github.com/plotters-rs/plotters)
-- [Evcxr](https://github.com/evcxr/evcxr)
+- [Evaluation Context for rust](https://github.com/evcxr/evcxr)
 - [mdBook](https://rust-lang.github.io/mdBook/)
 
 The first two crates are actively used for the examples, the third is needed for the

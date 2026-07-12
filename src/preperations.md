@@ -1,7 +1,5 @@
 # Preperation
 
-TODO Motivaton
-
 We'll using Jupyter Notebook with a Rust Kernel. 
 
 Here are the steps to install the notebook:
