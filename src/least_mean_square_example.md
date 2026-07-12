@@ -52,7 +52,7 @@ evcxr_figure((640, 480), |root| {
     }
 
     let b: f32 = (sum_xy - sum_x * sum_y / n) / (sum_xx - pow(sum_x, 2 as usize) / n);
-    let a: f32 = (sum_y - a * sum_x) / n;
+    let a: f32 = (sum_y - b * sum_x) / n;
 
     chart.draw_series(PointSeries::of_element(
         points,
@@ -66,7 +66,7 @@ evcxr_figure((640, 480), |root| {
     ))?;
 
     chart.draw_series(LineSeries::new(
-        (0..11).map(|x| x as f32).map(|x| (x, a * x + b)),
+        (0..11).map(|x| x as f32).map(|x| (x, b * x + a)),
         &GREEN,
     ))?;
 
