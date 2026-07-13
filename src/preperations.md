@@ -10,7 +10,8 @@ python3.12 -m venv .venv # creats a virtual environment
 # Either:
 source .venv/bin/activate # shell
 source .venv/bin/activate.fish # fish-shell
-./.venv/bin/activate.bat # windows
+./.venv/Scripts/activate.bat # Windows cmd
+./.venv/Scripts/Activate.ps1 # Windows PowerShell
 
 pip install -r requirements.txt # installs same version of jupyter notebook we use for the workshop
 cargo install --locked evcxr_jupyter@0.21.1 # install rust kernel for jupyter notebook on system
