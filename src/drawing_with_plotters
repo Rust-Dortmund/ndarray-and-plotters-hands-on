@@ -1,0 +1,67 @@
+# Drawing with plotters
+
+This examples are taken from the [Plotters Tutorial with Jupyter](https://plotters-rs.github.io/plotters-doc-data/evcxr-jjupyter-integration.html).
+
+
+## Drawing a Rectangle
+
+```
+:dep plotters = { version = "^0.3.0", default_features = false, features = ["evcxr", "all_series"] }
+extern crate plotters;
+// Import all the plotters prelude functions
+use plotters::prelude::*;
+// To create a figure that can be displayed in Jupyter notebook, use evcxr_figure function.
+// The first param is the resolution of the figure.
+// The second param is the closure that performes the drawing.
+evcxr_figure((300, 100), |root| {
+    // Do the drawings
+    root.fill(&BLUE)?;
+    // Tell plotters that everything is ok
+    Ok(())
+})
+```
+
+
+## Inserting Text
+
+```
+:dep plotters = { version = "^0.3.0", default_features = false, features = ["evcxr", "all_series"] }
+extern crate plotters;
+use plotters::prelude::*;
+
+evcxr_figure((320,50), |root| {
+    root.fill(&GREEN)?;
+    root.draw(&Text::new("Hello World from Rust Dortmund!", (15, 15), ("Arial", 20).into_font()))?;
+    Ok(())
+})
+```
+
+
+## Drawing of multiples charts
+
+```
+:dep plotters = { version = "^0.3.0", default_features = false, features = ["evcxr", "all_series"] }
+extern crate plotters;
+use plotters::prelude::*;
+use plotters::coord::Shift;
+pub fn sierpinski_carpet(
+    depth: u32, 
+    drawing_area: &DrawingArea<SVGBackend, Shift>) 
+-> Result<(), Box<dyn std::error::Error>> {
+    if depth > 0 {
+        let sub_areas = drawing_area.split_evenly((3,3));
+        for (idx, sub_area) in (0..).zip(sub_areas.iter()) {
+            if idx == 4 {
+                sub_area.fill(&WHITE)?;
+            } else {
+                sierpinski_carpet(depth - 1, sub_area)?;
+            }
+        }
+    }
+    Ok(())
+}
+evcxr_figure((4800,4800), |root| {
+    root.fill(&BLACK)?;
+    sierpinski_carpet(5, &root)
+}).style("width: 200px")  /* You can add CSS style to the result */
+```

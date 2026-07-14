@@ -8,6 +8,7 @@
 - [Drawing a diagramm](./drawing_diagramm.md)
 - [Least mean square basics](./least_mean_square_basics.md)
 - [Least mean square example](./least_mean_square_example.md)
+- [Drawing with plotters](./drawing_with_plotters)
 - [Useful links](./useful_links.md)
 - [Exercise 1](./exercise_1.md)
 - [Exercise 2](./exercise_2.md)
