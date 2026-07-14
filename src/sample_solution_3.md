@@ -39,8 +39,8 @@ for i in points.clone().into_iter() {
     sum_xy = sum_xy + i.0 * i.1;
 }
 
-let b: f32 = (sum_xy - sum_x * sum_y / n) / (sum_xx - pow(sum_x, 2 as usize) / n);
-let a: f32 = (sum_y - b * sum_x) / n;
+let a: f32 = (sum_xy - sum_x * sum_y / n) / (sum_xx - pow(sum_x, 2 as usize) / n);
+let b: f32 = (sum_y - a * sum_x) / n;
 
 evcxr_figure((640, 480), |root| {
     let root = root.titled("2D Plotting", ("Arial", 20).into_font())?;
