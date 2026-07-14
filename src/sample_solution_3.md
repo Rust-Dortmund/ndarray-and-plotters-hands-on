@@ -1,0 +1,3 @@
+# Sample solution Exercise 3
+
+To be done...
