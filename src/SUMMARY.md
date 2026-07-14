@@ -14,3 +14,5 @@
 - [Exercise 2](./exercise_2.md)
 - [Exercise 3](./exercise_3.md)
 - [Sample solution 1](./sample_solution_1.md)
+- [Sample solution 2](./sample_solution_2.md)
+- [Sample solution 3](./sample_solution_3.md)
