@@ -17,7 +17,7 @@ let u_out_ideal: Array1<f32> = u_in.mapv(|v| 0.7 * v - 1.4);
 
 ```
 
-## Add noies
+## Add noise
 
 ```rust
 :dep rand = "0.10.2"
