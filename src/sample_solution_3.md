@@ -5,7 +5,7 @@
 :dep num-traits = "0.2.19"
 :dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
 :dep rand = "0.10.2"
-    
+
 use num_traits::pow;
 use plotters::prelude::*;
 use ndarray::Array1;

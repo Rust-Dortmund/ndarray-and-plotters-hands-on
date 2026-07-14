@@ -2,7 +2,7 @@
 
 We'll using Jupyter Notebook with a Rust Kernel. 
 
-Here are the steps to install the notebook, do this in the meanwhile you should be able to see this page locally, when you installed cloned the repository, installed `mdbook` and generate this book with it. 
+Here are the steps to install the notebook, do this in the meanwhile you should be able to see this page locally, when you installed cloned the repository, installed `mdbook` and generate this book with it.
 
 ```shell
 python3.12 -m venv .venv # creats a virtual environment
