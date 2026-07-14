@@ -20,22 +20,22 @@ let points: Vec<(f32, f32)> = u_in.into_iter().zip(u_out).collect();
 let n: f32 = points.len() as f32;
 
 let mut sum_x: f32 = 0.0;
-for i in points.clone().into_iter() {
+for i in points.clone().iter() {
     sum_x = sum_x + i.0;
 }
 
 let mut sum_y: f32 = 0.0;
-for i in points.clone().into_iter() {
+for i in points.clone().iter() {
     sum_y = sum_y + i.1;
 }
 
 let mut sum_xx: f32 = 0.0;
-for i in points.clone().into_iter() {
+for i in points.clone().iter() {
     sum_xx = sum_xx + pow(i.0, 2 as usize);
 }
 
 let mut sum_xy: f32 = 0.0;
-for i in points.clone().into_iter() {
+for i in points.clone().iter() {
     sum_xy = sum_xy + i.0 * i.1;
 }
 
@@ -67,7 +67,7 @@ evcxr_figure((640, 480), |root| {
     ))?;
 
     chart.draw_series(LineSeries::new(
-        (-1..=6).map(|x| x as f32).map(|x| (x, b * x + a)),
+        (-1..=6).map(|x| x as f32).map(|x| (x, a * x + b)),
         &GREEN,
     ))?;
 

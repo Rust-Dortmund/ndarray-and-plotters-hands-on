@@ -66,7 +66,7 @@ evcxr_figure((640, 480), |root| {
     ))?;
 
     chart.draw_series(LineSeries::new(
-        (0..11).map(|x| x as f32).map(|x| (x, b * x + a)),
+        (0..11).map(|x| x as f32).map(|x| (x, a * x + b)),
         &GREEN,
     ))?;
 
