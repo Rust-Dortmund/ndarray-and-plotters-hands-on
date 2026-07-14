@@ -14,7 +14,7 @@ use num_traits::pow;
 use plotters::prelude::*;
 ```
 
-- Copy and paste teh following code snippet in a cell
+- Copy and paste the following code snippet in a cell
 
 ```
 evcxr_figure((640, 480), |root| {
