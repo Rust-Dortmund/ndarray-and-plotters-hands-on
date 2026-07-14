@@ -1,5 +1,7 @@
 # Useful links
 
+These links contain more detailed information about the concepts used in this hands-on.
+
 - [plotters-rs: Plotters Developer's guide](https://plotters-rs.github.io/book/intro/introduction.html)
 - [plotters-rs: Plotters Tutorial with Jupyter](https://plotters-rs.github.io/plotters-doc-data/evcxr-jupyter-integration.html)
 - [freeCodeCamp: How to run Rust on Jupyter Notebooks](https://www.freecodecamp.org/news/how-to-run-rust-on-jupyter-notebooks/)

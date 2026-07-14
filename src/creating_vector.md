@@ -1,5 +1,9 @@
 # Creating a vector
 
+Let's calculate a line as we know from school: `f(x) = bx + a;` and store it in memory.
+
+We want to explore several ways that lead to the same vector.
+
 ## Include dependencies
 
 Include [ndarray](https://docs.rs/ndarray/latest/ndarray/)

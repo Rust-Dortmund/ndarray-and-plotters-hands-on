@@ -1,10 +1,16 @@
 # Drawing a Diagram
 
+Let's draw our first diagrams with `plotter-rs`.
+
+## You may use Jupyter Notebook
+
 - Open a terminal, write `jupyter notebook`
     - opens a jupyter notebook in the browser
 	- click the button *new* on the upper right
 	- choose **rust**
 - Include [num_traits](https://shadow.github.io/docs/rust/num_traits/pow/index.html) and [plotters-rs](https://github.com/plotters-rs/plotters)
+
+## Code in Jupyter notebooks
 
 ```
 :dep num-traits = "0.2.19"
