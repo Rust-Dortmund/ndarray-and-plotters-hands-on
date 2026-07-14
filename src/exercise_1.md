@@ -1,4 +1,4 @@
-# Exercise 1
+# Exercise 1 - Draw Measurment Points
 
 ## Create a vector
 

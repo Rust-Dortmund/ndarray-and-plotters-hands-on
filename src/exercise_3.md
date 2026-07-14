@@ -1,3 +1,3 @@
-# Exercise 3
+# Exercise 3 - Seperation of Concern
 
 Define the data outside of the plotting function. The data (measurement points and linear equation) still should be plotted.
