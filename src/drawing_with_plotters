@@ -6,7 +6,7 @@ This examples are taken from the [Plotters Tutorial with Jupyter](https://plotte
 ## Drawing a Rectangle
 
 ```
-:dep plotters = { version = "^0.3.0", default_features = false, features = ["evcxr", "all_series"] }
+:dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
 extern crate plotters;
 // Import all the plotters prelude functions
 use plotters::prelude::*;
@@ -25,7 +25,7 @@ evcxr_figure((300, 100), |root| {
 ## Inserting Text
 
 ```
-:dep plotters = { version = "^0.3.0", default_features = false, features = ["evcxr", "all_series"] }
+:dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
 extern crate plotters;
 use plotters::prelude::*;
 
@@ -40,7 +40,7 @@ evcxr_figure((320,50), |root| {
 ## Drawing of multiples charts
 
 ```
-:dep plotters = { version = "^0.3.0", default_features = false, features = ["evcxr", "all_series"] }
+:dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
 extern crate plotters;
 use plotters::prelude::*;
 use plotters::coord::Shift;
