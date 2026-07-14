@@ -7,12 +7,12 @@ Create a vector *u_in* from 0 V to 5 V with more 51 elements.
 
 ## Apply a mathematical operation
 
-Apply an operation to each elenent of this vector
+Apply an operation to each elenent of this vector, use the function 0.7 * *u_in& - 1.4, and store it to *u_out_ideal*.
 
 
 ## Add noise
 
-Add noise to the values. The crate [rand](https://docs.rs/rand/latest/rand/fn.random.html) could be used.
+Add noise to the values. The crate [rand](https://docs.rs/rand/latest/rand/fn.random.html) could be used. Store the result to *u_out*.
 
 
 ## Plot data points to a Diagram
