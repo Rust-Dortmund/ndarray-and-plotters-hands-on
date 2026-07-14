@@ -46,7 +46,7 @@ evcxr_figure((640, 480), |root| {
         .caption("V_out = f(V_in)", ("Arial", 20).into_font())
         .x_label_area_size(40)
         .y_label_area_size(40)
-        .build_cartesian_2d(-1f32..6f32, -1f32..4f32)?;
+        .build_cartesian_2d(-1f32..6f32, -2f32..4f32)?;
 
     chart.configure_mesh()
         .x_desc("V_in / V")
