@@ -2,7 +2,7 @@
 
 ## Create a vector
 
-```
+```rust
 :dep ndarray = "0.17.2"
 use ndarray::Array1;
 
@@ -12,14 +12,14 @@ let u_in: Array1<f32> = Array1::linspace(0.0, 5.0, 51);
 
 ## Apply a mathematical operation
 
-```
+```rust
 let u_out_ideal: Array1<f32> = u_in.mapv(|v| 0.7 * v - 1.4);
 
 ```
 
 ## Add noies
 
-```
+```rust
 :dep rand = "0.10.2"
 use rand;
 
@@ -28,7 +28,7 @@ let u_out: Array1<f32> = let u_out: Array1<f32> = u_out_ideal.mapv(|v| v - 0.5 +
 
 ## Plot data points to diagram
 
-```
+```rust
 :dep ndarray = "0.17.2"
 :dep num-traits = "0.2.19"
 :dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }

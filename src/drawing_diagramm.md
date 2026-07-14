@@ -12,7 +12,7 @@ Let's draw our first diagrams with `plotter-rs`.
 
 ## Code in Jupyter notebooks
 
-```
+```rust
 :dep num-traits = "0.2.19"
 :dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
 
@@ -22,7 +22,7 @@ use plotters::prelude::*;
 
 - Copy and paste the following code snippet in a cell
 
-```
+```rust
 evcxr_figure((640, 480), |root| {
     let root = root.titled("2D Plotting", ("Arial", 20).into_font())?;
 

@@ -18,7 +18,7 @@ Add noise to the values. The crate [rand](https://docs.rs/rand/latest/rand/fn.ra
 ## Plot data points to a Diagram
 
 
-```
+```rust
 evcxr_figure((640, 480), |root| {
     let root = root.titled("2D Plotting", ("Arial", 20).into_font())?;
 

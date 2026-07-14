@@ -1,6 +1,6 @@
 # Sample solution Exercise 2
 
-```
+```rust
 :dep ndarray = "0.17.2"
 :dep num-traits = "0.2.19"
 :dep plotters = { version = "^0.3.0", default-features = false, features = ["evcxr", "all_series"] }
