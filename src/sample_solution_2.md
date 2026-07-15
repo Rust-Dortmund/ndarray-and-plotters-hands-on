@@ -43,22 +43,22 @@ evcxr_figure((640, 480), |root| {
     let n: f32 = points.len() as f32;
 
     let mut sum_x: f32 = 0.0;
-    for i in points.clone().iter() {
+    for i in points.iter() {
         sum_x = sum_x + i.0;
     }
 
     let mut sum_y: f32 = 0.0;
-    for i in points.clone().iter() {
+    for i in points.iter() {
         sum_y = sum_y + i.1;
     }
 
     let mut sum_xx: f32 = 0.0;
-    for i in points.clone().iter() {
+    for i in points.iter() {
         sum_xx = sum_xx + pow(i.0, 2 as usize);
     }
 
     let mut sum_xy: f32 = 0.0;
-    for i in points.clone().iter() {
+    for i in points.iter() {
         sum_xy = sum_xy + i.0 * i.1;
     }
 
